@@ -8,5 +8,10 @@ pipeline {
                 helloWorld('Sanjay')
             }
         }
+        stage('logging') {
+            steps {
+                logMessage('this is a log message   from the pipeline')
+            }
+        }
     }
 }
