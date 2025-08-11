@@ -13,5 +13,10 @@ pipeline {
                 logMessage('this is a log message   from the pipeline')
             }
         }
+        stage('Build and Test') {
+            steps {
+                buildAndTest()
+            }
+        }
     }
 }
